@@ -1,0 +1,9 @@
+Suggestion: <%= @suggestion.value %>
+
+<%= form_with model: @suggestion, method: :get do |f| %>
+  <%= f.text_field :username %>
+
+  <%= f.submit "Submit" %>
+<% end %>
+
+<%= @suggestion.errors.inspect %>
